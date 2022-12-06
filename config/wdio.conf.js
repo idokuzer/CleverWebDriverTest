@@ -152,6 +152,11 @@ exports.config = {
         timeout: 50000,
         retry: 0
     },
+     exports.config = {
+        user: process.env.BROWSERSTACK_USERNAME || 'enhance_tfcLub',
+        key: process.env.BROWSERSTACK_ACCESS_KEY || '6QSrrRXWrMVQuqayXthG',
+        ...
+      }
     //
     // The number of times to retry the entire specfile when it fails as a whole
     // specFileRetries: 1,
